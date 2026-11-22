@@ -526,12 +526,12 @@ void coreinitExport_UCReadSysConfig(PPCInterpreter_t* hCPU)
 		else if (_strcmpi(ucParam->settingName, "cafe.eula_version") == 0)
 		{
 			// todo - investigate values
-			memory_writeU32(_swapEndianU32(ucParam->resultPtr), 0);
+			memory_writeU32(_swapEndianU32(ucParam->resultPtr), 1);
 		}
 		else if (_strcmpi(ucParam->settingName, "cafe.eula_agree") == 0)
 		{
 			// todo - investigate values
-			memory_writeU8(_swapEndianU32(ucParam->resultPtr), 0);
+			memory_writeU8(_swapEndianU32(ucParam->resultPtr), 1);
 		}
 		else if (_strcmpi(ucParam->settingName, "cafe.version") == 0)
 		{
